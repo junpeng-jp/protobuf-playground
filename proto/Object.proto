@@ -1,0 +1,24 @@
+
+syntax = "proto3";
+
+option go_package = "./api/dto";
+
+message Container {
+    repeated Object objects = 10;
+}
+
+message Object {
+    string objectType = 1;
+
+    bytes body = 10;
+}
+
+message Location {
+    double lat = 1;
+    double long = 2;
+}
+
+message Error {
+    int32 code  = 1;
+    string message = 2;
+}
