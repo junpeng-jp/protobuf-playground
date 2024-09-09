@@ -29,7 +29,7 @@ proto-go-setup: ## download google.golang.org/protobuf & protoc-gen-go plugin
 protogen: ## compile all proto files in proto/* into go files
 	protoc --proto_path=proto --go_out=. proto/*
 
-.PHONY: protogen
+.PHONY: protogen-descriptor
 protogen-descriptor: ## compile all proto files to its binary descriptor format
 	protoc --proto_path=proto -o artefacts/descriptors.binpb proto/* --include_imports
 
