@@ -1,25 +1,0 @@
-
-ö
-Object.proto".
-	Container!
-objects
- (2.ObjectRobjects"<
-Object
-
-objectType (	R
-objectType
-body
- (Rbody"0
-Location
-lat (Rlat
-long (Rlong"5
-Error
-code (Rcode
-message (	RmessageBZ./dtobproto3
-”
-StaticContainer.protoObject.proto"\
-StaticContainer
-name (	Rname
-type (	Rtype!
-objects
- (2.ObjectRobjectsBZ./dtobproto3

@@ -12,7 +12,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/junpeng.ong/protobuf-playground/api"
+	"github.com/junpeng.ong/protobuf-playground/internal/api"
 )
 
 func run(ctx context.Context, w io.Writer, args []string) error {

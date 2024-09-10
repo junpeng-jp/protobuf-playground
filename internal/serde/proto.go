@@ -3,7 +3,7 @@ package serde
 import (
 	"fmt"
 
-	"github.com/junpeng.ong/protobuf-playground/api/dto"
+	"github.com/junpeng.ong/protobuf-playground/internal/dto"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/encoding/prototext"
 )

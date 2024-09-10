@@ -2,7 +2,7 @@
 syntax = "proto3";
 
 package dto;
-option go_package = "./api/dto";
+option go_package = "./internal/dto";
 
 message Container {
     repeated Object objects = 10;
@@ -10,7 +10,6 @@ message Container {
 
 message Object {
     string objectType = 1;
-
     bytes body = 10;
 }
 

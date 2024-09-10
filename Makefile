@@ -8,6 +8,12 @@ SHELL := bash
 .DEFAULT_GOAL := help
 .DELETE_ON_ERROR:
 
+## variable
+PROTO_ROOT="pb"
+PROTO_STATIC_PATH = "${PROTO_ROOT}/static"
+PROTO_DYNAMIC_PATH = "${PROTO_ROOT}/dynamic"
+PROTO_DESCRIPTOR_OUTPATH = "artefacts"
+
 ## formula
 .PHONY: help
 help:  ## print help message
@@ -27,11 +33,11 @@ proto-go-setup: ## download google.golang.org/protobuf & protoc-gen-go plugin
 
 .PHONY: protogen
 protogen: ## compile all proto files in proto/* into go files
-	protoc --proto_path=proto --go_out=. proto/*
+	protoc --proto_path=${PROTO_STATIC_PATH} --go_out=. ${PROTO_STATIC_PATH}/*
 
-.PHONY: protogen-descriptor
-protogen-descriptor: ## compile all proto files to its binary descriptor format
-	protoc --proto_path=proto -o artefacts/descriptors.binpb proto/* --include_imports
+.PHONY: protoc-descriptor
+protoc-descriptor: ## compile all proto files to its binary descriptor format
+	protoc --proto_path=${PROTO_DYNAMIC_PATH} --include_imports -o ${PROTO_DESCRIPTOR_OUTPATH}/bin.desc ${PROTO_DYNAMIC_PATH}/* 
 
 ## service
 

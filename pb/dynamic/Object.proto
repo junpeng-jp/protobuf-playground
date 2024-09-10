@@ -1,0 +1,14 @@
+
+syntax = "proto3";
+
+package dto.dynamic;
+
+message Location {
+    double lat = 1;
+    double long = 2;
+}
+
+message Error {
+    int32 code  = 1;
+    string message = 2;
+}

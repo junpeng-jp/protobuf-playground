@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"github.com/junpeng.ong/protobuf-playground/api/handlers"
+	"github.com/junpeng.ong/protobuf-playground/internal/api/handlers"
 )
 
 func addRoutes(mux *http.ServeMux) *http.ServeMux {

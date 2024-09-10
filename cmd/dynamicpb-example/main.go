@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/junpeng.ong/protobuf-playground/registry"
+	"github.com/junpeng.ong/protobuf-playground/internal/registry"
 	"google.golang.org/protobuf/encoding/protojson"
 	"google.golang.org/protobuf/encoding/prototext"
 	"google.golang.org/protobuf/reflect/protoreflect"

@@ -6,8 +6,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/junpeng.ong/protobuf-playground/api/dto"
-	"github.com/junpeng.ong/protobuf-playground/api/serde"
+	"github.com/junpeng.ong/protobuf-playground/internal/dto"
+	"github.com/junpeng.ong/protobuf-playground/internal/serde"
 	"google.golang.org/protobuf/encoding/protojson"
 )
 
